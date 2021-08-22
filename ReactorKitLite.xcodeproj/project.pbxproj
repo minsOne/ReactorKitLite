@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		CB90715726D2409200C62D83 /* Exports.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90714F26D2409200C62D83 /* Exports.swift */; };
 		CB90715826D2409200C62D83 /* IdentityHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90715026D2409200C62D83 /* IdentityHashable.swift */; };
 		CB90715926D2409200C62D83 /* IdentityEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90715126D2409200C62D83 /* IdentityEquatable.swift */; };
+		CB90715D26D2456100C62D83 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB90715B26D2456100C62D83 /* RxSwift.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CB90714F26D2409200C62D83 /* Exports.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exports.swift; sourceTree = "<group>"; };
 		CB90715026D2409200C62D83 /* IdentityHashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityHashable.swift; sourceTree = "<group>"; };
 		CB90715126D2409200C62D83 /* IdentityEquatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityEquatable.swift; sourceTree = "<group>"; };
+		CB90715B26D2456100C62D83 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB90715D26D2456100C62D83 /* RxSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 			children = (
 				CB90713F26D23FE500C62D83 /* Sources */,
 				CB90713E26D23FE500C62D83 /* Products */,
+				CB90715A26D2456100C62D83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +86,14 @@
 				CB90715126D2409200C62D83 /* IdentityEquatable.swift */,
 			);
 			path = ReactorKitLite;
+			sourceTree = "<group>";
+		};
+		CB90715A26D2456100C62D83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB90715B26D2456100C62D83 /* RxSwift.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +319,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PRODUCTS_DIR)/Carthage/Build/**",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -333,6 +349,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PRODUCTS_DIR)/Carthage/Build/**",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

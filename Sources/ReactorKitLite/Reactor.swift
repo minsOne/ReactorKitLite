@@ -7,7 +7,6 @@
 //
 
 import RxSwift
-import WeakMapTable
 
 @available(*, obsoleted: 0, renamed: "Never")
 public typealias NoAction = Never

@@ -1,6 +1,6 @@
 import RxSwift
 
-public class Stub<Reactor: ReactorKit.Reactor> {
+public class Stub<Reactor: ReactorKitLite.Reactor> {
   private unowned var reactor: Reactor
   private let disposeBag: DisposeBag
 
